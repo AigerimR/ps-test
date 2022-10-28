@@ -14,7 +14,7 @@ body {
 
 // HEADER
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: $white;
@@ -80,7 +80,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+  overflow: auto;
 
   div {
     display: flex;
@@ -103,8 +103,9 @@ nav {
 
 //MAIN
 main {
-  margin: 74px 90px 20px 150px;
+  padding: 20px 90px 20px 154px;
   height: 100%;
+  width: 100%;
   overflow: auto;
   section {
     margin: auto;
@@ -241,7 +242,7 @@ main {
 
 @media (max-width: 980px) {
   main {
-    margin: 64px 60px 20px 120px;
+    padding: 20px 60px 20px 120px;
   }
 }
 
@@ -268,7 +269,7 @@ main {
   }
 
   main {
-    margin: 64px 40px 20px 100px;
+    padding: 20px 40px 20px 100px;
   }
 
   .servers > p {
@@ -283,7 +284,7 @@ main {
 @media (max-width: 500px) {
 
   main {
-    margin: 64px 20px 20px 80px;
+    padding: 20px 20px 20px 80px;
 
     h1 {
       font-size: 26px;
